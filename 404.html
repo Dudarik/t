@@ -7,9 +7,10 @@
     <title>Document</title>
   </head>
   <body>
-    404
+    <div id="app"></div>
     <script>
       const url = new URL(location.href);
+      document.querySelector('#app').innerHTML = url.href;
       console.log(url);
     </script>
   </body>
