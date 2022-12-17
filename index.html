@@ -10,6 +10,7 @@
   <div id="app">Loading....</div>
   <script>
     document.querySelector('#app').innerHTML = sessionStorage.getItem('turl');
+    sessionStorage.clear()
     const ITER = 1e9
     console.time('start_1_16>>2')
     for (let i = 0; i < ITER; i++) {
