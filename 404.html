@@ -7,11 +7,13 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="app"></div>
+    404
     <script>
       const url = new URL(location.href);
-      document.querySelector('#app').innerHTML = url.href;
-      console.log(url);
+      sessionStorage.setItem('turl', location.href);
+      location = '/';
+      // console.log(url);
     </script>
   </body>
 </html>
+
